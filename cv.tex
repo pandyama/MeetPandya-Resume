@@ -1,0 +1,150 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{url}
+\usepackage{parskip} 	
+\usepackage{charter}
+
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[bottom=0in,top=0.5in,scale=0.92]{geometry}
+
+\usepackage{tabularx}
+
+\usepackage{enumitem}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+\usepackage{fontawesome5}
+\usepackage{pifont}
+
+\begin{document}
+
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Meet Pandya} \\[7.5pt]
+\href{https://github.com/pandyama}{\raisebox{-0.05\height}\faGithub\ pandyama} \ $|$ \ 
+% \href{https://www.linkedin.com/in/meetpandya-9089/}{\raisebox{-0.05\height}\faLinkedin\ meet} \ $|$ \ 
+% \href{https://pandyama.github.io/}{\raisebox{-0.05\height}\faGlobe \ pandyama.github.io} \ $|$ \ 
+\href{pandyama2@gmail.com}{\raisebox{-0.05\height}\faMapPin \ Calgary, Canada} \ $|$ \ 
+\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ pandyama2@gmail.com} \ $|$ \ 
+\href{tel:+000000000000}{\raisebox{-0.05\height}\faPhone \ 647-962-9872} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Experience
+\section{\large{Experience}}
+\textbf{Software Developer at Mikata Health} & \hfill Jan 2022 - present \\[3.75pt]
+\textsl{Healthcare startup}  & \hfill \\[3.75pt]
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep,after=\strut, leftmargin=1.5em, itemsep=3pt]
+    \item[\ding{70}] Working on a complex clinic facing web app using React/Redux, Typescript, Nodejs \& Postgres
+    \item[\ding{70}] Replace and fill your experience here
+\end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+\vspace{0.15cm}
+
+\textbf{Applications Engineer at Evertz Microsystems} & \hfill Feb 2019 - Aug 2021 \\[3.75pt]
+\textsl{Video Broadcast Engineering}  & \hfill \\[3.75pt]
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}[nosep,after=\strut, leftmargin=1.5em, itemsep=3pt]
+    \item[\ding{70}] Product Specialist for a Big Data software using Elasticsearch, Kibana \& Grafana
+\end{itemize}
+\end{minipage}
+}
+\end{tabularx}
+\vspace{0.15cm}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Software Developer at Tata Consulting Services} & \hfill June 2017 - Feb 2019 \\[3.75pt]
+\textsl{IT Consulting}  & \hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1.5em, itemsep=3pt]
+        \item[\ding{70}] Engaged in daily scrum meetings and followed Agile approach
+        \item[\ding{70}] Worked in a small team to built a client project tracking web app using Nodejs, Express \& Mongodb
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{\large{Education}}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\textbf{University of Calgary} & M.Eng - Software Engineering, 2022 \\
+\textbf{McMaster University} & B.A.Sc - Computer Science, 2017 \\
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{\large{Skills}}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Frontend} & \normalsize{React, Angular, Typescript, HTML, CSS }\\
+\textbf{Backend}  &  \normalsize{Nodejs, Javascript, Knexjs, AWS Lambda, Java}\\  
+\textbf{Database}  &  \normalsize{PostgreSQL, MySQL, SQLite, MongoDB}\\
+\textbf{Mobile}  &  \normalsize{Android, Kotlin}\\  
+\textbf{Test}  &  \normalsize{Jest, Puppeteer}\\
+\end{tabularx}
+
+%Projects
+\section{\large{Projects}}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Chat Builder,} M.Eng Capstone Project\\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1.5em, itemsep=3pt]
+        \item[\ding{70}] Worked in a group of 3 to develop a chat builder UI which increased efficiency by nearly 50\%
+        \item[\ding{70}] Built AWS Lambdas on the backend as needed to fetch complex chat details
+        \item[\ding{70}] Designed React custom components to create and modify chat nodes
+        \item[\ding{70}] Customer success team can build chats within hours now instead of taking days with developer help
+    \end{itemize}
+    \end{minipage}}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Notes, Android App}\\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1.5em, itemsep=3pt]
+        \item[\ding{70}] Notes app built using Kotlin, SQLite and SharedPreferences 
+        \item[\ding{70}] Recycler View used to display notes in Linear or Grid view        
+    \end{itemize}
+    \end{minipage}}  \\
+\end{tabularx}
+\vspace{1cm}
+
+\end{document}
