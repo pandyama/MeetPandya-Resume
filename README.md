@@ -1,4 +1,3 @@
 # MeetPandya-Resume
-Latex Resume
 
-Uploaded tex file of the resume
+Uploaded latex file of the resume
